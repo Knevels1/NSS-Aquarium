@@ -1,19 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import "./fishbrethren.css";
 
-/*Typography
---------------------------------------------------------------*/
+
+@import url(<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">);
+
+
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+ 
+    color: blue;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    line-height: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+ .MA{
+     text-align: center;
+    border: dotted blue;
+}
+.contentContainer {
+    display: flex;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+.contentContainer__left {
+flex: 3;
+}
+
+.contentContainer__right {
+flex: 1;
+}
+
+section, article, aside{
+    border: 1px dotted blue;
 }
