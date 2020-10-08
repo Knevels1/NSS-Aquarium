@@ -9,7 +9,7 @@ export const Fish = (fishObj) => {
     <p>LENGTH</p>
     <p class="fish__length">${fishObj.length}inches (Adult)</p>
     <p>HARVEST LOCATION</p>
-    <p class="fish__Location">${fishObj.location}</p>
+    <p class="fish__Location">${fishObj.harvLocation}</p>
     <p>DIET</p>
     <p class="fish__food">${fishObj.food}</p>
     </div>
