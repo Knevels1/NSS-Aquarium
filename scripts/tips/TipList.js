@@ -19,6 +19,14 @@ contentElement.innerHTML += `
        ${tipsHTMLRepresentations}
     </div>
     </aside>
+<<<<<<< HEAD
     `
+=======
+
+
+
+
+`
+>>>>>>> 36f6eaafc1c1435570a970a834613d7c6bbfc518
 
 }
