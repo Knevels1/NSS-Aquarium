@@ -27,7 +27,7 @@ const fishCollection = [
         length: 6,
         harvLocation: "Bueng Boraphet and the streams which lead from it, and as being found in the Chao Phraya River as far south as Bangkok",
         food: "plants, crustaceans and other small insects",
-        image:"./images/pepper.jpg"
+        image:"./images/pepper.jpg "
     },
     {
         name: "Sammy",
