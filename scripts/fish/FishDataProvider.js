@@ -75,8 +75,15 @@ export const mostHolyFish = () => {
     return holyFish
 }
 
- export const soldierFish () => {
+ export const soldierFish = () => {
      // 5, 10, 15, 20, 25, etc... fish
+     const soldierFish = []
+
+     for (const fish of fishCollection) {
+         if(fish.length % 5 === 0){
+             soldierFish.push(fish)
+         }
+     }
      
      
      return soldiers
