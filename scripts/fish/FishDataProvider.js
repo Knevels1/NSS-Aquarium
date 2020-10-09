@@ -24,7 +24,7 @@ const fishCollection = [
     {
         name: "Pepper",
         species: "Epalzeorhynchos bicolor",
-        length: 6,
+        length: 12,
         harvLocation: "Bueng Boraphet and the streams which lead from it, and as being found in the Chao Phraya River as far south as Bangkok",
         food: "plants, crustaceans and other small insects",
         image:"./images/pepper.jpg "
@@ -32,17 +32,57 @@ const fishCollection = [
     {
         name: "Sammy",
         species: "Melanotaeniidae",
-        length: 4.7,
+        length: 6,
         harvLocation: "northern and eastern Australia, New Guinea, islands in Cenderawasih Bay and Raja Ampat Islands in Indonesia, and in Madagascar.",
         food: "algae, small crustaceans and aquatic insects",
         image:"./images/sammy.jpg"
+    },
+    {
+        name: "Sammy's Twin",
+        species: "Melanotaeniidae",
+        length: 10,
+        harvLocation: "northern and eastern Australia, New Guinea, islands in Cenderawasih Bay and Raja Ampat Islands in Indonesia, and in Madagascar.",
+        food: "algae, small crustaceans and aquatic insects",
+        image:"./images/sammy.jpg"
+    },
+    {
+        name: "Charlie (peppers brother)",
+        species: "Epalzeorhynchos bicolor",
+        length: 36,
+        harvLocation: "Bueng Boraphet and the streams which lead from it, and as being found in the Chao Phraya River as far south as Bangkok",
+        food: "plants, crustaceans and other small insects",
+        image:"./images/pepper.jpg "
     },
 ]
 
 export const useFish = () =>{
     return fishCollection.slice()
 }
+export const mostHolyFish = () => {
 
-export const addFish = (fishObject) => {
-    fishCollection.push(fishObject)
+    // 3, 6, 9, 12, etc... fish
+    const holyFish = []
+
+    for (const fish of fishCollection) {
+         if(fish.length % 3 === 0){
+             holyFish.push(fish)
+
+         }
+        console.log(fish)
+
+    }
+
+    return holyFish
 }
+
+ export const soldierFish () => {
+     // 5, 10, 15, 20, 25, etc... fish
+     
+     
+     return soldiers
+ }
+
+ export const nonHolyFish () => {
+     // Any fish not a multiple of 3 or 5
+     return regularFish
+ }

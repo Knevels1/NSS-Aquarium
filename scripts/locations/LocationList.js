@@ -18,6 +18,6 @@ export const LocationList = () => {
        ${locationHtmlRepresemtations}
     </div>
     </section>
-    <section class="travel__locations">
+    
 `
 }
