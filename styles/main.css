@@ -9,6 +9,7 @@ button,
 input,
 select,
 textarea {
+    background-color: blanchedalmond;
  
     color: blue;
     font-family: "Dancing Script", cursive;
@@ -33,6 +34,7 @@ flex: 3;
 
 .contentContainer__right {
 flex: 1;
+background-color: crimson;
 }
 
 section, article, aside{

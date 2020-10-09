@@ -13,20 +13,13 @@ export const TipList = () => {
         tipsHTMLRepresentations += Tips(tip)
     }
 contentElement.innerHTML += `
-    <aside class="contentContainer__right">
+<aside class="contentContainer__right">
     <h4>Care Tips</h4>
     <div class="Tips">
        ${tipsHTMLRepresentations}
     </div>
     </aside>
-<<<<<<< HEAD
     `
-=======
-
-
-
-
-`
->>>>>>> 36f6eaafc1c1435570a970a834613d7c6bbfc518
+    
 
 }
