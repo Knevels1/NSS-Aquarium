@@ -4,6 +4,7 @@ import {TipList} from './tips/TipList.js'
 TipList()
 import {LocationList} from './locations/LocationList.js'
 LocationList()
-import { mostHolyFish, soldierFish } from './fish/FishDataProvider.js'
+import { mostHolyFish, soldierFish, regularFish } from './fish/FishDataProvider.js'
 mostHolyFish()
 soldierFish()
+regularFish()

@@ -16,7 +16,7 @@ const fishCollection = [
     {
         name: "Scrappy",
         species: "Betta splendens",
-        length:2.8 ,
+        length:25 ,
         harvLocation: "Mekong and Chao Phraya river basins in Thailand (formerly called Siam)",
         food: "zooplankton, crustaceans, and the larvae of mosquitoes and other water-bound insects",
         image: "./images/scrappy.jpeg"
@@ -32,7 +32,7 @@ const fishCollection = [
     {
         name: "Sammy",
         species: "Melanotaeniidae",
-        length: 6,
+        length: 18,
         harvLocation: "northern and eastern Australia, New Guinea, islands in Cenderawasih Bay and Raja Ampat Islands in Indonesia, and in Madagascar.",
         food: "algae, small crustaceans and aquatic insects",
         image:"./images/sammy.jpg"
@@ -80,7 +80,7 @@ export const mostHolyFish = () => {
      const SoldierFish = []
 
      for (const fish of fishCollection) {
-         if(fish.length % 5 === 0){
+         if(fish.length % 5 === 0 && fish.length % 3 !== 0){
              SoldierFish.push(fish)
          }
      }
@@ -89,7 +89,15 @@ export const mostHolyFish = () => {
      return SoldierFish
  }
 
-//  export const nonHolyFish () => {
-//     //  Any fish not a multiple of 3 or 5
-//      return regularFish
-//  }
+ export const regularFish = () => {
+      //  Any fish not a multiple of 3 or 5
+      const RegularFish = []
+
+      for (const fish of fishCollection) {
+          if(fish.length % 3 !== 0 && fish.length % 5 !== 0){
+            RegularFish.push(fish)
+          }
+
+      }
+  return RegularFish
+}
